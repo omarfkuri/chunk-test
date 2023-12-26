@@ -7,3 +7,8 @@ To build with cmake, please make sure the following libraries are installed:
  - GLEW 
  - GLM
 
+To build Cmake config, run `config.sh`
+
+To build code, run `build.sh`
+
+To run, run `run.sh`

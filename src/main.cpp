@@ -6,11 +6,20 @@
 
 int main()
 try {
-	
-	ChunkRen* ren = new ChunkRen(1, 1, 16, true);
+	/**
+	 * ChunkRen is a subclass of Logic, which
+	 * handles window creation and the main 
+	 * loop. It renders a grid of Chunks, each
+	 * with a single mesh procedurally generated
+	 * depending on the following parameters:
+	 * 
+	 * 	1. The width and depth of the map
+	 *  2. The height of the map
+	 * 	3. The width, depth and height of each chunk
+	 * 	4. Whether the chunk should be hollow or not
+	 **/
 
-	ren->run();
-	delete ren;
+	ChunkRen(4, 1, 32, true).run();
 }
 catch(std::string error)
 {

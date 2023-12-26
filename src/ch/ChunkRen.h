@@ -8,18 +8,6 @@
 #include "Chunk.h"
 #include "Camera.h"
 
-/**
- * ChunkRen is a subclass of Logic, which
- * handles window creation and the main 
- * loop. It renders a grid of Chunks, each
- * with a single mesh procedurally generated
- * depending on the following parameters:
- * 
- * 	1. The width and depth of the map
- *  2. The height of the map
- * 	3. The width, depth and height of each chunk
- * 	4. Whether the chunk should be hollow or not
- **/
 class ChunkRen : public Logic {
 public:
 	ChunkRen(int rad_xz, int rad_y, int ch_size, bool hollow);

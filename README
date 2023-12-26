@@ -1,0 +1,9 @@
+# Chunk Tests
+
+## Build
+
+To build with cmake, please make sure the following libraries are installed:
+ - GLFW
+ - GLEW 
+ - GLM
+

@@ -63,6 +63,7 @@ void Chunk::load_data(bool hollow)
 void Chunk::load_data_for(const long& bx, const long& by, const long& bz, int& r)
 {
   // get the min and max x, y and z values for the position.
+  // each value is the total of the chunk plus the current position
 	float X0 = tx + bx, X1 = tx + bx + 1;
 	float Y0 = ty + by, Y1 = ty + by + 1;
 	float Z0 = tz + bz, Z1 = tz + bz + 1;
@@ -70,7 +71,7 @@ void Chunk::load_data_for(const long& bx, const long& by, const long& bz, int& r
   // texture scale
 	float t = 1;
 	
-  // Each face varies in normals and positions, which are hard coded.
+  // Each face varies in normal and positions, so they are hard coded.
 
 	// neg x
 	{
